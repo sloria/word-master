@@ -1,4 +1,3 @@
-import { ReactComponent as Github } from '../data/Github.svg'
 import { ReactComponent as Close } from '../data/Close.svg'
 import Modal from 'react-modal'
 
@@ -24,35 +23,24 @@ export const InfoModal = ({ isOpen, handleClose, darkMode, styles }) => (
             </li>
           </ul>
           <div className="mb-3 mt-8 flex items-center">
-            <span className="nm-inset-n-green text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
+            <span className="font-asl text-xl nm-inset-n-green text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
               W
             </span>
             <span className="mx-2">=</span>
             <span>Correct letter, correct spot</span>
           </div>
           <div className="mb-3">
-            <span className="nm-inset-yellow-500 text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
+            <span className="font-asl text-xl nm-inset-yellow-500 text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
               W
             </span>
             <span className="mx-2">=</span>
             <span>Correct letter, wrong spot</span>
           </div>
-          <span className="nm-inset-n-gray text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
+          <span className="font-asl text-xl nm-inset-n-gray text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
             W
           </span>
           <span className="mx-2">=</span>
           <span>Wrong letter</span>
-        </div>
-        <div className="flex justify-center sm:text-base text-sm">
-          <span>This project is open source on</span>
-          <a
-            className="ml-[6px] rounded-full h-5 w-5 sm:h-6 sm:w-6"
-            href="https://github.com/octokatherine/word-master"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Github />
-          </a>
         </div>
       </div>
     </div>

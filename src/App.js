@@ -369,7 +369,7 @@ function Puzzle() {
   }
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <div className={`flex flex-col justify-between h-fill bg-background dark:bg-background-dark`}>
+      <div className="flex flex-col justify-between h-screen bg-background dark:bg-background-dark">
         <header className="flex items-center py-2 px-3 text-primary dark:text-primary-dark">
           <button
             type="button"
@@ -378,8 +378,8 @@ function Puzzle() {
           >
             <Settings />
           </button>
-          <h1 className="flex-1 text-center text-xl xxs:text-2xl sm:text-4xl tracking-wide font-bold font-righteous">
-            WORD MASTER
+          <h1 className="flex-1 text-center text-xl xxs:text-2xl sm:text-4xl tracking-wide font-bold font-brand">
+            DACTLE
           </h1>
           <button
             type="button"
@@ -400,7 +400,7 @@ function Puzzle() {
                       rowNumber,
                       colNumber,
                       letter
-                    )} inline-flex items-center font-medium justify-center text-lg w-[13vw] h-[13vw] xs:w-14 xs:h-14 sm:w-20 sm:h-20 rounded-full`}
+                    )} inline-flex items-center font-medium justify-center text-5xl w-[13vw] h-[13vw] xs:w-14 xs:h-14 sm:w-20 sm:h-20 rounded-full font-asl`}
                   >
                     {letter}
                   </span>

@@ -6,7 +6,16 @@ import { difficulty } from '../App'
 
 Modal.setAppElement('#root')
 
-export const SettingsModal = ({ isOpen, handleClose, styles, darkMode, toggleDarkMode, difficultyLevel, setDifficultyLevel, levelInstructions }) => {
+export const SettingsModal = ({
+  isOpen,
+  handleClose,
+  styles,
+  darkMode,
+  toggleDarkMode,
+  difficultyLevel,
+  setDifficultyLevel,
+  levelInstructions,
+}) => {
   return (
     <Modal
       isOpen={isOpen}
@@ -70,31 +79,42 @@ export const SettingsModal = ({ isOpen, handleClose, styles, darkMode, toggleDar
                 ))}
               </div>
             </RadioGroup>
-          <p className="text-center w-10/12 mx-auto font-medium">{levelInstructions}</p>
+            <p className="text-center w-10/12 mx-auto font-medium">{levelInstructions}</p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center text-sm">
             <div className="mb-4">
-              If you're enjoying this game, you can show your support by{' '}
+              Buy the{' '}
               <a
-                href="https://www.buymeacoffee.com/katherinecodes"
+                className="underline"
+                href="https://ko-fi.com/s/afbfa7ae55"
                 target="_blank"
                 rel="noreferrer"
               >
-                buying me a coffee
+                ASL Font
               </a>
-              <span className="ml-1 text-xs">💛</span>
+              👌
             </div>
-            <a
-              href="https://www.buymeacoffee.com/katherinecodes"
-              target="_blank"
-              rel="noreferrer"
-              className="nm-flat-background dark:nm-flat-background-dark rounded-xl hover:nm-inset-background dark:hover:nm-inset-background-dark"
-            >
-              <img
-                alt="buy me a coffee"
-                src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=katherinecodes&button_colour=eab308&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"
-              />
-            </a>
+            <div className="mb-4">
+              Forked from{' '}
+              <a
+                href="https://octokatherine.github.io/word-master/"
+                className="underline"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Word Master
+              </a>
+              , which was inspired by{' '}
+              <a
+                href="https://www.powerlanguage.co.uk/wordle/"
+                className="underline"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Wordle
+              </a>
+              💛
+            </div>
           </div>
         </div>
       </div>

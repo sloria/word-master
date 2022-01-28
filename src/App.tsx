@@ -458,7 +458,7 @@ function Board() {
                       rowNumber,
                       colNumber,
                       letter
-                    )} inline-flex items-center font-medium justify-center text-5xl w-[13vw] h-[13vw] xs:w-14 xs:h-14 rounded-full font-asl`}
+                    )} inline-flex items-center font-medium justify-center text-4xl w-[13vw] h-[13vw] xs:w-14 xs:h-14 rounded-full font-asl`}
                   >
                     {letter}
                   </span>

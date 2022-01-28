@@ -63,7 +63,7 @@ const Keyboard = ({
   }, [handleKeyDown])
 
   return (
-    <div className="font-asl text-4xl w-full flex flex-col items-center mb-3 select-none h-auto justify-end">
+    <div className="font-asl text-3xl sm:text-4xl w-full flex flex-col items-center mb-3 select-none h-auto justify-end">
       {keyboardLetters.map((row, idx) => (
         <div key={idx} className="w-full flex justify-center my-[5px]">
           {idx === 2 && (

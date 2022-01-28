@@ -436,7 +436,7 @@ function Board() {
           >
             <Settings />
           </button>
-          <h1 className="flex-1 text-center text-xl xxs:text-2xl sm:text-4xl tracking-wide font-bold font-brand">
+          <h1 className="flex-1 text-center text-xl xxs:text-2xl sm:text-3xl tracking-wide font-bold font-brand">
             DACTLE
           </h1>
           <button
@@ -458,7 +458,7 @@ function Board() {
                       rowNumber,
                       colNumber,
                       letter
-                    )} inline-flex items-center font-medium justify-center text-5xl w-[13vw] h-[13vw] xs:w-14 xs:h-14 sm:w-20 sm:h-20 rounded-full font-asl`}
+                    )} inline-flex items-center font-medium justify-center text-5xl w-[13vw] h-[13vw] xs:w-14 xs:h-14 rounded-full font-asl`}
                   >
                     {letter}
                   </span>

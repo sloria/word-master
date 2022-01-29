@@ -136,7 +136,7 @@ function Board() {
 
   const gameCode = params.gameCode!
   const decipheredAnswer = Encrypt(gameCode, cipherKey, true).toLowerCase()
-  const shareUrl = `${window.location.origin}/#/${gameCode}`
+  const shareUrl = `${window.location.origin}/${gameCode}`
 
   const [answer, setAnswer] = useState(decipheredAnswer.toUpperCase())
   const [gameState, setGameState] = useLocalStorage(
